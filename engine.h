@@ -5,6 +5,8 @@
 #ifndef CONNECT4C_ENGINE_H
 #define CONNECT4C_ENGINE_H
 
+#include <stdbool.h>
+
 #define DATABASE_DEPTH 15
 #define WORST_EVAL (-18)
 #define BEST_EVAL 18
@@ -19,7 +21,5 @@
 int evaluatePosition(long state, int piece, int alpha, int beta, int movesMade, i8 *lowerCache0, i8 *upperCache0,
                      long *lowerCache1, long *upperCache1, int *lower_values, int *upper_values,
                      const int *pos_sums, int **nCr, int **combo_sums, long* pos_count);
-
-int count_threats(long state, long pieceLocations, int piece);
 
 #endif

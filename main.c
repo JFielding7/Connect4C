@@ -44,7 +44,7 @@ int main() {
     clock_t begin = clock();
     long val = 0;
     long *pos_count = &val;
-    printf("%d\n", evaluatePosition(13510798887616512, 1, WORST_EVAL, BEST_EVAL, 6,
+    printf("%d\n", evaluatePosition(0, 1, WORST_EVAL, BEST_EVAL, 0,
                                     lowerCache0, upperCache0, lowerCache1, upperCache1, lower_values, upper_values,
                                     pos_sum, nCr, combos_sums, pos_count));
     printf("Pos: %ld\n", *pos_count);
